@@ -1,18 +1,25 @@
-"use client";
+// ./provider.tsx
+import React, { ReactNode } from 'react';
 
-import React from 'react';
-import { ThemeProvider as NextThemeProvider } from 'next-themes';
+interface ThemeProviderProps {
+  children: ReactNode;
+  attribute?: string;
+  defaultTheme?: string;
+  enableSystem?: boolean;
+  disableTransitionOnChange?: boolean;
+}
 
-const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+const ThemeProvider: React.FC<ThemeProviderProps> = ({
+  children,
+  attribute = "class",
+  defaultTheme = "light",
+  enableSystem = true,
+  disableTransitionOnChange = false,
+}) => {
   return (
-    <NextThemeProvider
-      attribute="class"
-      defaultTheme="dark"
-      enableSystem
-      disableTransitionOnChange
-    >
+    <div>
       {children}
-    </NextThemeProvider>
+    </div>
   );
 };
 

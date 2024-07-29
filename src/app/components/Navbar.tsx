@@ -35,7 +35,7 @@ const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: isVisible ? 0 : -100 }}
       transition={{ duration: 0.3 }}
-      className="fixed left-80 right-80 top-5  py-4 rounded bg-emerald-900 text-white shadow-lg z-50 flex items-center justify-center"
+      className="fixed  w-2/3  md:w-1/3 md:left-1/3  top-5 py-4 rounded bg-emerald-900 text-white shadow-lg z-50 flex items-center justify-center"
     >
       <div className="flex justify-between items-center">
         <ul className="flex space-x-6 text-lg">

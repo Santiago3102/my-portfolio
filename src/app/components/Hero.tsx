@@ -22,12 +22,12 @@ const Hero = () => {
         <div className="flex justify-center relative my-20 z-10">
             <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
                 <h2 className='uppercase tracking-widest text-xs text-center text-emerald-100 max-w-80'>
-                    My Portfolio: FullStack Developer
+                Portfolio of a Full-Stack Developer
                 </h2>
 
                 <TextGenerateEffect 
                     className='text-center text-[40px] md:text-5xl lg:text-6xl text-green-200'
-                    words='Building Innovative Solutions with a Passion for Code'
+                    words='Shaping the Future with Innovative Code and Design'
                 />
 
                 <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl text-emerald-300'>
